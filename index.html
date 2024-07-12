@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강렬한 자기소개 페이지</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff4d4d;
+            padding: 60px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #1a1a1a;
+        }
+
+        section {
+            margin: 50px 0;
+            padding: 30px;
+            background-color: #2a2a2a;
+            border-left: 5px solid #ff4d4d;
+        }
+
+        h2 {
+            color: #ff4d4d;
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .kakao {
+            width: 100px;
+            height: 100px;
+        }
+
+        .skill {
+            background-color: #ff4d4d;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            flex-basis: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-item i {
+            font-size: 6em;
+            color: #ff4d4d;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .contact-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="1719904759682.jpg" alt="프로필 사진" class="profile-image">
+                <div class="header-text">
+                    <h1>김종명</h1>
+                    <p class="subtitle">백엔드도 잘하고 싶은 프론트엔드 개발자</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>소개</h2>
+            <p>안녕하세요!</p>저는 김종명입니다. 여러분들과 친해져서 싸피 과정을 잘 마무리해 백엔드도 잘하는 프론트엔드 개발자가 되고 싶습니다.</p>
+        </section>
+
+        <section>
+            <h2>정보</h2>
+            <ul>
+                <li><strong>나이</strong>  <p>1997년생 (28세)</p> </li>
+                <li><strong>거주지</strong>  <p>경기도 고양시 일산</p> </li>
+                <li><strong>연락처</strong>  <p>010-9466-6746</p> </li>
+                <li><strong>취미</strong><p>맛있는 음식 먹기, 여행, 야구 관람</p></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>기술</h2>
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">React</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>연락처</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <p>jump6746@naver.com</p>
+                    <i class="fas fa-envelope"></i>
+                    
+                </div>
+                <div class="contact-item">
+                    <p>KaKaoTalk</p>
+                    <img src="./kakao.jpg" alt="" srcset="" class="kakao">
+                    
+                </div>
+                <div class="contact-item">
+                    <p>https://github.com/jump6746</p>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

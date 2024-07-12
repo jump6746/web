@@ -1,0 +1,42 @@
+header {
+    justify-content: center;
+    align-items: center;
+    display : flex;
+    height : 20vh;
+    gap : 20px;
+    padding : 20px; 
+    background-color: skyblue;
+    
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size : 50px;
+    font-weight : 600;
+    padding-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.story_container {
+    margin-block: 20px;
+    border-radius: 35px;
+    background-color: rgb(167, 224, 224);
+    height : 15vh;
+}
+
+.footer_container{
+    height: 15vh;
+    background-color: skyblue;
+}
